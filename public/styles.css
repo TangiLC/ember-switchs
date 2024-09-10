@@ -1,0 +1,146 @@
+body {
+	text-align: center;
+	background: #f3f3f3;
+	margin: auto;
+}
+h2 {
+	font-size: 2.5rem;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-size: 1.8rem;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+.std-label {
+	width: 30%;
+}
+
+pre {
+	height: 50px;
+	width: 94%;
+	margin: auto;
+	overflow-y: auto;
+	background-color: #f7f7f7;
+	padding: 10px;
+	border: 1px solid #ccc;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.column-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.row-flex {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	width: 100%;
+}
+
+.time {
+	width: 660px;
+}
+
+.header-button {
+	width: 55px;
+	height: 55px;
+	padding: 5px;
+	border-radius: 6px;
+	border: 1px solid black;
+	margin-right: 3px;
+}
+
+#numeric-pad {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 6px 3px;
+}
+#secret-div {
+	transition: width 600ms ease, height 1000ms ease;
+}
+
+.numeric-btn,
+.delete-btn {
+	padding: 5px;
+	font-size: 12px;
+	background-color: lightgrey;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.delete-btn {
+	grid-row: span 2;
+	background-color: red;
+	margin-left: 3px;
+	color: white;
+}
+
+.numeric-btn:hover,
+.delete-btn:hover {
+	background-color: grey;
+	color: white;
+}
+
+.form-button {
+	font-weight: 800;
+	font-size: 1.2rem;
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	background: lightgreen;
+	border-radius: 5px;
+}
+
+.small-input {
+	width: 3rem;
+}
+.centered-div {
+	width: 95%;
+	margin: auto;
+	padding-top: 5px;
+	justify-content: center;
+}
+.auto-margin {
+	margin: auto;
+}
+
+.station-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.button-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px;
+	gap: 4%;
+	width: 96%;
+}
+
+.gpi-btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 14rem;
+	border-radius: 10px;
+}

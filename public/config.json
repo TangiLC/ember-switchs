@@ -1,0 +1,29 @@
+{
+  "userName": "Radio Gaga",
+  "configMdp": "4949",
+  "emberServer": {
+    "ip": "192.168.0.1",
+    "port": 9000,
+    "gpPath": "root/device/"
+  },
+  "buttons": [
+    {
+      "isActive": true,
+      "name": "mic1",
+      "gpi": 1,
+      "gpo": 1
+    },
+    {
+      "isActive": true,
+      "name": "talkback",
+      "gpi": 2,
+      "gpo": 2
+    },
+    {
+      "isActive": false,
+      "name": "",
+      "gpi": null,
+      "gpo": null
+    }
+  ]
+}

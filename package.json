@@ -1,0 +1,54 @@
+{
+	"name": "ember-switches",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "electron .",
+		"build-linux": "electron-builder --linux",
+		"build-win": "electron-builder"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^1.7.7",
+		"dgram": "^1.0.1",
+		"emberplus": "^1.0.0",
+		"express": "^4.19.2",
+		"fs": "^0.0.1-security",
+		"node-emberplus": "^3.0.6",
+		"path": "^0.12.7"
+	},
+	"devDependencies": {
+		"electron-builder": "^25.0.5",
+		"electron": "^32.0.2"
+	},
+	"build": {
+		"appId": "com.emberswitch.id",
+		"productName": "Ember+Switches",
+		"copyright": "© 2024 Talec",
+		"directories": {
+			"buildResources": "build"
+		},
+		"files": [
+			"main.js",
+			"index.js",
+			"assets/**/*",
+			"public/**/*",
+			"node_modules/**/*",
+			"package.json",
+			"!.vscode/",
+			"!coverage/"
+		],
+		"win": {
+			"target": [
+				"nsis"
+			]
+		},
+		"nsis": {
+			"oneClick": false,
+			"allowToChangeInstallationDirectory": true
+		}
+	}
+}
