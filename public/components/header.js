@@ -20,8 +20,6 @@ export const initHeader = (isConfigOpen, toggleConfig, mdp) => {
 	let isPasswordDisplayed = false;
 	const header = document.getElementById("app-header");
 	let timeIntervalId = null;
-
-	// Variables pour gérer la div cliquable
 	let clickCount = 0;
 	let lastClickTime = 0;
 

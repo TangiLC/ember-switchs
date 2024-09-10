@@ -1,5 +1,5 @@
 {
-  "userName": "Radio Gaga",
+  "userName": "Radio Gagu",
   "configMdp": "4949",
   "emberServer": {
     "ip": "192.168.0.1",
@@ -10,8 +10,8 @@
     {
       "isActive": true,
       "name": "mic1",
-      "gpi": 1,
-      "gpo": 1
+      "gpi": 9,
+      "gpo": 9
     },
     {
       "isActive": true,

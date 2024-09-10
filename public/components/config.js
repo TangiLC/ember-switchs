@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const configPath = path.join(__dirname, "/config.json");
+const configPath = path.join(__dirname, "/user/config.json");
 
 export const initConfig = async (isConfigOpen, toggleConfig) => {
 	const configSection = document.getElementById("config-section");
@@ -64,7 +64,7 @@ export const initConfig = async (isConfigOpen, toggleConfig) => {
           <input type="text" id="userName" value="${
 						configUpdate.userName || ""
 					}" required></div>
-        <div style="width:150px;height:60px"><img src="../assets/station-logo.png" class="station-img"/></div>
+        <div style="width:150px;height:60px"><img src="../assets/broadcast.svg" class="station-img"/></div>
         </div><div class="row-flex centered-div">
         <div class="row-flex auto-margin">
           <label for="configMdp" class="std-label">mot de passe :</label>

@@ -12,8 +12,8 @@ const toggleConfig = () => {
 
 const renderApp = () => {
 	initHeader(isConfigOpen, toggleConfig, config.configMdp);
-	initUser(isConfigOpen, config);
-	initConfig(isConfigOpen, toggleConfig, config);
+	initUser(isConfigOpen);
+	initConfig(isConfigOpen, toggleConfig);
 };
 
 const loadConfig = async () => {
@@ -43,7 +43,7 @@ const loadConfig = async () => {
 };
 
 // Fonction pour recharger et mettre à jour la configuration dans le localStorage
-const updateConfigInLocalStorage = (newConfig) => {
+/*const updateConfigInLocalStorage = (newConfig) => {
 	config = newConfig;
 	localStorage.setItem("appConfig", JSON.stringify(config));
 	console.log(
@@ -51,7 +51,7 @@ const updateConfigInLocalStorage = (newConfig) => {
 		config
 	);
 	renderApp();
-};
+};*/
 
 window.onload = () => {
 	loadConfig();
@@ -61,4 +61,4 @@ window.addEventListener("beforeunload", () => {
 	localStorage.removeItem("appConfig");
 });
 
-export { updateConfigInLocalStorage };
+//export { updateConfigInLocalStorage };
