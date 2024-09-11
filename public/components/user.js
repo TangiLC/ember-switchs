@@ -167,7 +167,7 @@ const updateButtonAppearance = (
 	attributs,
 	buttonsArray
 ) => {
-	console.log("gpiButtons", buttonsArray);
+	//console.log("gpiButtons", buttonsArray);
 	const currentState = buttonsArray[index].state;
 	const { bgColor, txtColor, img, label } = attributs[currentState];
 

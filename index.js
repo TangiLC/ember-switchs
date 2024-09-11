@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu } = require("electron");
+const { app, BrowserWindow, Menu, globalShortcut } = require("electron");
 const path = require("path");
 const fs = require("fs");
 //const { exec } = require("child_process");
@@ -12,11 +12,17 @@ function createWindow() {
 			contextIsolation: false,
 		},
 		icon: path.join(__dirname, "assets/appIcon.png"),
-        //frame:false
+		//frame:false
 	});
 
 	win.loadFile("public/index.html");
-	//win.webContents.openDevTools({ mode: "detach" }); 
+
+	//win.webContents.openDevTools({ mode: "detach" });
+	globalShortcut.register("Control+Shift+I", () => {
+		if (win) {
+			win.webContents.openDevTools({ mode: "detach" });
+		}
+	});
 
 	/* win.webContents.on('devtools-opened', () => {
     win.webContents.closeDevTools();
@@ -24,7 +30,6 @@ function createWindow() {
 
 	Menu.setApplicationMenu(null);
 }
-
 
 let config = {};
 const loadConfig = () => {

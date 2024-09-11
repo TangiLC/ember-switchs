@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "electron .",
-		"build": "electron-builder"
+		"build": "electron-builder",
+		"linux-build": "electron-builder --linux"
 	},
 	"keywords": [
 		"ember+",
@@ -49,7 +50,7 @@
 				"nsis",
 				"portable"
 			],
-			"icon": "build/icon.ico"
+			"icon": "assets/appIcon.png"
 		},
 		"linux": {
 			"target": [
@@ -57,7 +58,7 @@
 				"deb"
 			],
 			"category": "Utility",
-			"icon": "build/icon.png"
+			"icon": "assets/appIcon.png"
 		},
 		"nsis": {
 			"oneClick": false,
