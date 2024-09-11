@@ -12,6 +12,7 @@ function createWindow() {
 			contextIsolation: false,
 		},
 		icon: path.join(__dirname, "assets/appIcon.png"),
+        frame:false
 	});
 
 	win.loadFile("public/index.html");
