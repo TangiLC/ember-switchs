@@ -2,7 +2,7 @@
   "userName": "Radio Gagu",
   "configMdp": "4949",
   "emberServer": {
-    "ip": "192.168.0.1",
+    "ip": "192.168.100.1",
     "port": 9000,
     "gpPath": "root/device/"
   },

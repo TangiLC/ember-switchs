@@ -3,7 +3,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const configPath = path.join(__dirname, "/user/config.json");
+const configPath = path.join(__dirname, "/config.json");
 
 export const initConfig = async (isConfigOpen, toggleConfig) => {
 	const configSection = document.getElementById("config-section");

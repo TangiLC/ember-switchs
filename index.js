@@ -12,11 +12,11 @@ function createWindow() {
 			contextIsolation: false,
 		},
 		icon: path.join(__dirname, "assets/appIcon.png"),
-        frame:false
+        //frame:false
 	});
 
 	win.loadFile("public/index.html");
-	win.webContents.openDevTools({ mode: "detach" }); 
+	//win.webContents.openDevTools({ mode: "detach" }); 
 
 	/* win.webContents.on('devtools-opened', () => {
     win.webContents.closeDevTools();
